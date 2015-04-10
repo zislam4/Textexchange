@@ -7,3 +7,11 @@
 .nav ul {
 	display: inline;
 }
+
+ul .left {
+	text-align: left;
+}
+
+ul .right {
+	text-align: right;
+}
