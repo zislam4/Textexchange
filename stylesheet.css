@@ -1,1 +1,5 @@
 //Put styles here
+
+.nav li {
+	display: inline;
+}
