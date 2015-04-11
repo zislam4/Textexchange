@@ -12,7 +12,23 @@
 	<script src="sellerhome.js"> </script>
 </head>
 <body>
-	<script src="loginjs.js"></script>
+	<script>
+	  window.fbAsyncInit = function() {
+	    FB.init({
+	      appId      : '567256786748529',
+	      xfbml      : true,
+	      version    : 'v2.3'
+	    });
+	  };
+
+	  (function(d, s, id){
+	     var js, fjs = d.getElementsByTagName(s)[0];
+	     if (d.getElementById(id)) {return;}
+	     js = d.createElement(s); js.id = id;
+	     js.src = "//connect.facebook.net/en_US/sdk.js";
+	     fjs.parentNode.insertBefore(js, fjs);
+	   }(document, 'script', 'facebook-jssdk'));
+	</script>
 
 	<div class="nav">	
 		<ul class="pull-left">
@@ -36,21 +52,53 @@
 
 	<div id="tab-1" class="tab-content current">
 		<p> ALL THE INFO ABOUT MANAGING BOOKS HERE WOOT </p> 
+		<div class="fb-like"
+  			data-share="true"
+  			data-width="450"
+  			data-show-faces="true"> 
+		</div>
 	</div>
 
 	<div id="tab-2" class="tab-content">
 		<p> so much info about adding books omg so awesome </p>
 		<form>
 			<div class="form-group">
-				<textarea class="form-control status-box" rows="1" placeholder="Title"> </textarea>
+				<textarea class="form-control title-box" rows="1" placeholder="Title"></textarea>
 			</div>
+			<div class="form-group">
+				<textarea class="form-control author-box" rows="1" placeholder="Author"></textarea>
+			</div>
+			<div class="form-group">
+				<textarea class="form-control vol-box" rows="1" placeholder="Vol"></textarea>
+			</div>
+			<div class="form-group">
+				<textarea class="form-control edi-box" rows="1" placeholder="Edition"></textarea>
+			</div>
+			<div class="form-group">
+				<textarea class="form-control class-box" rows="1" placeholder="Class Name"></textarea>
+			</div>
+			<div class="form-group">
+				<textarea class="form-control course-box" rows="1" placeholder="Course Number"></textarea>
+			</div>
+			<div class="form-group">
+				<textarea class="form-control prof-box" rows="1" placeholder="Professor"></textarea>
+			</div>
+			<div class="form-group">
+				<textarea class="form-control price-box" rows="1" placeholder="Price"></textarea>
+			</div>
+			<div class="form-group">
+				<textarea class="form-control cond-box" rows="1" placeholder="Condition/Description"></textarea>
+			</div>
+
 				<div class="button-group pull-right">
-				<a href="#" class="btn btn-primary"> submit </a>
+				<a href="#" class="btn btn-primary"> Add to marketplace </a>
 				</div>
 
 			<ul class="posts">
 			</ul>
 		</form>
+
+
 		
 	</div>
 </div>
