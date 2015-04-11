@@ -11,19 +11,15 @@ a:hover {
 }
 
 .nav {
-    position:fixed;
-    margin-top: -70px;
+    position:inline;
+    margin-top: 0px;
     background-color:;
 }
 
 .nav li {
 	display: inline;
-	padding-left: 10px;
-	padding-right: 10px;
-}
-
-.nav ul {
-	padding-right: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 h1 {
