@@ -20,17 +20,26 @@ var main = function() {
 	});
 
 	$('.btn').click(function() {
-		var title = $('.title-box').val();
-		var author = $('.author-box').val();
-		var vol = $('.vol-box').val();
-		var edi = $('.edi-box').val();
-		var clname = $('.class-box').val();
-		var cnum = $('.course-box').val();
-		var prof = $('.prof-box').val();
-		var price = $('.price-box').val();
-		var cond = $('.cond-box').val();
+		var xhr = new XMLHttpRequest();
+		xhr.open("get", "http://link?", true);
 
+		var title = $('.title-box').val(); 
+		var author = $('.author-box').val();
+		var vol = $('.vol-box').val(); 
+		var edi = $('.edi-box').val(); 
+		var clname = $('.class-box').val(); 
+		var cnum = $('.course-box').val(); 
+		var prof = $('.prof-box').val(); 
+		var price = $('.price-box').val(); 
+		var cond = $('.cond-box').val(); 
+
+
+		var bookinfo = "title="+title+"&author="+author+"&vol="+vol+"&edition="+edi+"&classname="+clname+"&coursenum="+cnum+"&prof="+prof+"&price="+price+"&condition="+cond;
+
+		xhr.send(bookinfo);
+/*
 		$('<li>').text(title).prependTo('.posts');
+		$('<li>').text(title).prependTo('.manage-books');
 		$('<li>').text(author).prependTo('.posts');
 		$('<li>').text(vol).prependTo('.posts');
 		$('<li>').text(edi).prependTo('.posts');
@@ -39,7 +48,7 @@ var main = function() {
 		$('<li>').text(prof).prependTo('.posts');
 		$('<li>').text(price).prependTo('.posts');
 		$('<li>').text(cond).prependTo('.posts');
-
+*/
 		$('.title-box').val('');
 		$('.author-box').val('');
 		$('.vol-box').val('');

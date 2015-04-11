@@ -17,6 +17,12 @@ ul.tabs li{
 	cursor: pointer;
 }
 
+.row {
+	width:1200px;
+	display: inline-block;
+
+}
+
 ul.tabs li.current{
 	background: #ededed;
 	color: #222;
