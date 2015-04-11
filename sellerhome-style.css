@@ -32,3 +32,25 @@ ul.tabs li.current{
 	display: inherit;
 }
 
+.button-group {
+	margin-bottom: 50px;
+}
+
+.posts {
+	clear: both;
+	list-style: none;
+	padding-left: 0;
+	width: 100%;
+}
+
+.posts li {
+	background-color: #fff;
+	border: 1px solid #d8d8d8;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	word-wrap: break-word;
+	min-height: 42px;
+}
