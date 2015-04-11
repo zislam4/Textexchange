@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Add an Event - Tufts Free Food Finder</title>
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+	<link href="./css/style.css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script> <!--Will probably change this to some other source-->
+	<script src="addevent.js"></script>
+</head>
+<body>
+
+	<div class="container">
+      	<div class="header clearfix">
+        	<nav>
+          		<ul class="nav nav-pills pull-right">
+            		<!-- <li role="presentation" class="active"><a href="#">Home</a></li> -->
+            		<!-- <li role="presentation"><a href="#">About</a></li>
+            		<li role="presentation"><a href="#">Contact</a></li> -->
+          		</ul>
+        	</nav>
+        	<h3 class="text-muted big brown center">Tufts Free Food Finder</h3>
+      </div>
+<!--Above copied from homepage for consistency-->
+
+
+	<h3>Add an event</h3>
+	<form method="post">
+		<ul>
+			<li>Event Name - What's your event called?<span class="pull-right"><input type="text" name="eventname" placeholder="Enter event name"></input></span></li><br/>
+			<li>Date - When's it happening?<span class="pull-right"><input type="text" name="date" placeholder="mm/dd/yy"></input></span></li><br/>
+			<li>Description -  Tell us a little more about it<span class="pull-right"><input type="text" name="details" placeholder="Tell us about your event"></input></span></li><br/>
+		</ul>
+			<input type="submit" value="Add Event!"></input> 
+	</form>
+</body>
+</html>
