@@ -7,7 +7,9 @@
 	<title>Tufts Text Exchange - Sell textbooks</title>
 	<link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css" type="text/css" rel="stylesheet"/>
 	<link rel="stylesheet" type="text/css" href="stylesheet.css" />
-	<script src=""></script>
+	<link rel="stylesheet" type="text/css" href="sellerhome-style.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="sellerhome.js"> </script>
 </head>
 <body>
 	<script src="loginjs.js"></script>
@@ -24,14 +26,34 @@
 		</ul>
 	</div>
 
-	<ul class="nav nav-tabs">
-		<li class="col-md-6"><a href="#">Manage your books</a></li>
-		<li class="active col-md-6"><a href="#">Add a book</a></li>
+<!--Tab Headers--> 
+<div class="container">
+
+	<ul class="tabs">
+		<li class="tab-link current" data-tab="tab-1"> Manage Books </li>
+		<li class="tab-link" data-tab="tab-2"> Add Books </li>
 	</ul>
 
-	<div class="blah">
+	<div id="tab-1" class="tab-content current">
+		<p> ALL THE INFO ABOUT MANAGING BOOKS HERE WOOT </p> 
 	</div>
-	
+
+	<div id="tab-2" class="tab-content">
+		<p> so much info about adding books omg so awesome </p>
+		<form>
+			<div class="form-group">
+				<textarea class="form-control status-box" rows="1" placeholder="Title"> </textarea>
+			</div>
+				<div class="button-group pull-right">
+				<a href="#" class="btn btn-primary"> submit </a>
+				</div>
+
+			<ul class="posts">
+			</ul>
+		</form>
+		
+	</div>
+</div>
 
 </body>
 </html>
