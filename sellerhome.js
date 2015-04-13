@@ -36,6 +36,11 @@ var main = function() {
 
 		var bookinfo = "title="+title+"&author="+author+"&vol="+vol+"&edition="+edi+"&classname="+clname+"&coursenum="+cnum+"&prof="+prof+"&price="+price+"&condition="+cond;
 
+		
+		xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		xhr.setRequestHeader("Content-length", bookinfo.length);
+		xhr.setRequestHeader("Connection", "close");
+
 		xhr.send(bookinfo);
 /*
 		$('<li>').text(title).prependTo('.posts');
