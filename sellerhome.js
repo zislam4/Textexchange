@@ -21,7 +21,7 @@ var main = function() {
 
 	$('.btn').click(function() {
 		var xhr = new XMLHttpRequest();
-		xhr.open("get", "https://morning-peak-4677.herokuapp.com/add", true);
+		xhr.open("post", "https://morning-peak-4677.herokuapp.com/add", true);
 
 		var title = $('.title-box').val(); 
 		var author = $('.author-box').val();
