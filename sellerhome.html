@@ -91,7 +91,7 @@ function testAPI() {
 	FB.api('/me', function(response) {
 		console.log('Successful login for: ' + response.name);
 		user_info = response;
-		console.log(user_info);
+		//console.log(user_info);
 		document.getElementById('status').innerHTML =
 		'Thanks for logging in, ' + response.name + '!';
 	});
@@ -108,7 +108,7 @@ function testAPI() {
 }, {scope: 'public_profile,email'});
 */
 
-console.log(JSON.stringify(user_info));
+console.log(user_info);
 console.log("ADD A LOGOUT BUTTON FOOL!");
 
 </script>
