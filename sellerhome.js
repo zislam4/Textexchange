@@ -6,7 +6,7 @@ var main = function() {
 
 	// Printing seller's books
 	var request = new XMLHttpRequest();
-	var url = "https://morning-peak-4677.herokuapp.com/managebooks"+"seller_id="+seller_id;
+	var url = "https://morning-peak-4677.herokuapp.com/managebooks?"+"seller_id="+seller_id;
 	request.open("GET", url, true);
 
 	request.onreadystatechange = function () {
