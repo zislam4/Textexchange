@@ -93,8 +93,6 @@ function testAPI() {
 		document.getElementById('status').innerHTML =
 		'Thanks for logging in, ' + response.name + '!';
 	});
-
-	console.log(user_info);
 }
 
 /* FB.login(function(response) {
@@ -108,6 +106,7 @@ function testAPI() {
 }, {scope: 'public_profile,email'});
 */
 
+console.log(user_info);
 console.log("ADD A LOGOUT BUTTON FOOL!");
 
 </script>
