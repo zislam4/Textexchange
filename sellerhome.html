@@ -93,7 +93,7 @@ function testAPI() {
 	});
 }
 
-FB.login(function(response) {
+/* FB.login(function(response) {
 	if (response.status === 'connected') {
 		console.log(response.authResponse.accessToken);
 	} else if (response.status === 'not_authorized') {
@@ -102,7 +102,7 @@ FB.login(function(response) {
 
 	}
 }, {scope: 'public_profile,email'});
-
+*/
 var user_info = FB.api('/me', function(response) {
 	console.log(JSON.stringify(response));
 });
