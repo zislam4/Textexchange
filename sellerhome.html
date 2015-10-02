@@ -103,9 +103,6 @@ function testAPI() {
 	}
 }, {scope: 'public_profile,email'});
 */
-var user_info = FB.api('/me', function(response) {
-	console.log(JSON.stringify(response));
-});
 
 console.log(JSON.parse(user_info));
 
