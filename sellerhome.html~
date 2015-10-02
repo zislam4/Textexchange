@@ -97,18 +97,6 @@ function testAPI() {
 	});
 }
 
-/* FB.login(function(response) {
-	if (response.status === 'connected') {
-		console.log(response.authResponse.accessToken);
-	} else if (response.status === 'not_authorized') {
-		
-	} else {
-
-	}
-}, {scope: 'public_profile,email'});
-*/
-
-console.log(user_info);
 console.log("ADD A LOGOUT BUTTON FOOL!");
 
 </script>

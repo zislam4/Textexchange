@@ -91,24 +91,13 @@ function testAPI() {
 	FB.api('/me', function(response) {
 		console.log('Successful login for: ' + response.name);
 		user_info = response;
-		//console.log(user_info);
+		main();
 		document.getElementById('status').innerHTML =
 		'Thanks for logging in, ' + response.name + '!';
 	});
 }
 
-/* FB.login(function(response) {
-	if (response.status === 'connected') {
-		console.log(response.authResponse.accessToken);
-	} else if (response.status === 'not_authorized') {
-		
-	} else {
 
-	}
-}, {scope: 'public_profile,email'});
-*/
-
-console.log(user_info);
 console.log("ADD A LOGOUT BUTTON FOOL!");
 
 </script>
