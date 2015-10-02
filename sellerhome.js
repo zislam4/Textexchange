@@ -1,7 +1,12 @@
 var main = function() {
 
 	console.log("We're in main!");
-	console.log(user_info);
+	
+	var user_name = user_info.name;
+	var user_id = user_info.
+
+	console.log(user_name);
+	console.log(user_id);
 	$('ul.tabs li').click(function(){
 		var tab_id = $(this).attr('data-tab');
 
@@ -34,8 +39,7 @@ var main = function() {
 		var cnum = $('.course-box').val(); 
 		var prof = $('.prof-box').val(); 
 		var price = $('.price-box').val(); 
-		var cond = $('.cond-box').val(); 
-
+		var cond = $('.cond-box').val(); 		
 
 		var bookinfo = "title="+title+"&author="+author+"&vol="+vol+"&edition="+edi+"&classname="+clname+"&coursenum="+cnum+"&prof="+prof+"&price="+price+"&condition="+cond;
 
