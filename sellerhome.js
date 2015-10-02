@@ -3,7 +3,7 @@ var main = function() {
 	console.log("We're in main!");
 	
 	var user_name = user_info.name;
-	var user_id = user_info.
+	var user_id = user_info.id;
 
 	console.log(user_name);
 	console.log(user_id);
