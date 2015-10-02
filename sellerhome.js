@@ -1,12 +1,10 @@
 var main = function() {
 
-	console.log("We're in main!");
-	
-	var user_name = user_info.name;
-	var user_id = user_info.id;
+	// Saving user_info from sellerhome.html
+	var seller_name = user_info.name;
+	var seller_id = user_info.id;
 
-	console.log(user_name);
-	console.log(user_id);
+	// Begin interactive functions
 	$('ul.tabs li').click(function(){
 		var tab_id = $(this).attr('data-tab');
 
@@ -41,7 +39,7 @@ var main = function() {
 		var price = $('.price-box').val(); 
 		var cond = $('.cond-box').val(); 		
 
-		var bookinfo = "title="+title+"&author="+author+"&vol="+vol+"&edition="+edi+"&classname="+clname+"&coursenum="+cnum+"&prof="+prof+"&price="+price+"&condition="+cond;
+		var bookinfo = "seller_name="+seller_name+"&seller_id="+seller_id+"&title="+title+"&author="+author+"&vol="+vol		+"&edition="+edi+"&classname="+clname+"&coursenum="+cnum+"&prof="+prof+"&price="+price+"&condition="+cond;
 
 		
 		xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
