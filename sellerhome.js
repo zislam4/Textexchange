@@ -4,6 +4,29 @@ var main = function() {
 	var seller_name = user_info.name;
 	var seller_id = user_info.id;
 
+	// Printing seller's books
+	var request = new XMLHttpRequest();
+	var url = "https://morning-peak-4677.herokuapp.com/managebooks"+"seller_id="+seller_id;
+	request.open("GET", url, true);
+
+	request.onreadystatechange = function () {
+		console.log(request.readyState);
+		console.log(request.status);
+		if (request.readyState == 4 && request.status == 200) {
+			var bookinfos = JSON.parse(request.responseText);
+			for (var i = 0; i < bookinfos.length; i++) {
+				if (bookinfos[i]["Title"] != null) {
+					$('<li>').text(bookinfos[i]["title"]).prependTo('.manage-books');
+				}
+			}
+		}
+
+	};
+
+	request.send();
+
+
+
 	// Begin interactive functions
 	$('ul.tabs li').click(function(){
 		var tab_id = $(this).attr('data-tab');
