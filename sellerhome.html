@@ -102,6 +102,15 @@ FB.login(function(response) {
 
 	}
 }, {scope: 'public_profile,email'});
+
+var user_info = FB.api('/me', function(response) {
+	console.log(JSON.stringify(response));
+});
+
+console.log(JSON.parse(user_info));
+
+console.log("ADD A LOGOUT BUTTON FOOL!");
+
 </script>
 
 <!--
@@ -112,6 +121,8 @@ the FB.login() function when clicked.
 
 <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
 </fb:login-button>
+
+<!-- ADD A LOGOUT BUTTON FOOL -->
 
 <div id="status">
 </div>
