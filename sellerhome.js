@@ -1,6 +1,7 @@
 var main = function() {
 
 	console.log("We're in main!");
+	console.log(user_info);
 	$('ul.tabs li').click(function(){
 		var tab_id = $(this).attr('data-tab');
 
