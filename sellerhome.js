@@ -16,7 +16,6 @@ var main = function() {
 			var bookinfos = JSON.parse(request.responseText);
 			for (var i = 0; i < bookinfos.length; i++) {
 				if (bookinfos[i]["title"] != null) {
-					console.log(bookinfos[i]["title"]);
 					$('<li>').text(bookinfos[i]["title"]).prependTo('.manage-books');
 				}
 			}
