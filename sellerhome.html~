@@ -91,11 +91,12 @@ function testAPI() {
 	FB.api('/me', function(response) {
 		console.log('Successful login for: ' + response.name);
 		user_info = response;
-		//console.log(user_info);
+		main();
 		document.getElementById('status').innerHTML =
 		'Thanks for logging in, ' + response.name + '!';
 	});
 }
+
 
 console.log("ADD A LOGOUT BUTTON FOOL!");
 

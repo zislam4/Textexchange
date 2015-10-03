@@ -15,7 +15,8 @@ var main = function() {
 		if (request.readyState == 4 && request.status == 200) {
 			var bookinfos = JSON.parse(request.responseText);
 			for (var i = 0; i < bookinfos.length; i++) {
-				if (bookinfos[i]["Title"] != null) {
+				if (bookinfos[i]["title"] != null) {
+					console.log(bookinfos[i]["title"]);
 					$('<li>').text(bookinfos[i]["title"]).prependTo('.manage-books');
 				}
 			}
