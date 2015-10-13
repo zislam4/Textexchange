@@ -80,3 +80,7 @@ a:hover {
     text-decoration: none;
     padding: 10px;
 }
+
+#email-form {
+	background-color: #bfd3df;
+}
