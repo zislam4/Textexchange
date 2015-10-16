@@ -15,13 +15,22 @@ body {
 }
 */
 .logo {
+	padding-top: 200px;
 	width: 50%;
-	align: middle;
-	top: 50%;
 	margin: 0 auto;
 }
 
 .options {
+	width: 30%;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.options-buttons {
+	display: inline-block;
+}
+
+/*.options {
 	width: 100%;
 	margin: 0 auto;
 	display: inline-block;
@@ -30,4 +39,4 @@ body {
 .options img {
 	width: 30%;
 	display: inline-block;
-}
+} */
