@@ -1,10 +1,11 @@
+@import url(https://fonts.googleapis.com/css?family=Signika);
+
 .menu {
 	font-family: Futura;
 	display: block;
     color: black;
     padding-top: 10px;
     padding-bottom: 20px;
-/*    background-color: yellow;*/
 }
 
 a:hover {
@@ -16,14 +17,12 @@ a:hover {
 	display: inline-block;
 	float: left;
 	margin-left: 10px;
-/*	background-color: green;*/
 }
 
 .right {
 	display: inline-block;
 	float: right;
 	margin-right: 10px;
-/*	background-color: blue;*/
 }
 
 .banner {
@@ -35,12 +34,52 @@ a:hover {
 }
 
 a {
-/*	background-color: red;*/
 	display: inline-block;
 	color: #606466;
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
 	background-color: none;
 	padding-left: 15px;
 	padding-right: 15px;
 } 
+
+body {
+	margin: 0px;
+	font-family: futura;
+}
+
+.banner-background {
+	background-color: #606466;
+	width: 100%;
+	height: 200px;
+	margin: 0px;
+}
+
+.banner-words {
+	padding-top: 60px;
+	text-align: center;
+}			
+
+#banner-title {
+	font-size: 60px;
+	color: #7FA9AE;
+	font-family: Signika;
+}
+
+#banner-title-buy {
+	font-size: 60px;
+	color: #FFD91D;
+	font-family: Signika;
+}
+
+#banner-title-sell {
+	font-size: 60px;
+	color: #FF991F;
+	font-family: Signika;
+}
+
+#banner-subscript {
+	font-size: 18px;
+	font-family: Futura;
+	color: white;
+}

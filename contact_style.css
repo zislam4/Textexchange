@@ -1,32 +1,7 @@
 /* contact page */
 @import url(https://fonts.googleapis.com/css?family=Signika);
 @import url(https://fonts.googleapis.com/css?family=PT+Sans);
-body {
-	margin: 0px;
-}
-.banner-background {
-	background-color: #606466;
-	width: 100%;
-	height: 200px;
-	margin: 0px;
-}
 
-.banner-words {
-	padding-top: 60px;
-	text-align: center;
-}			
-
-#banner-title {
-	font-size: 60px;
-	color: #7FA9AE;
-	font-family: Signika;
-}
-
-#banner-subscript {
-	font-family: Futura;
-	font-size: 18px;
-	color: white;
-}
 /* title page */
 
 #email {
