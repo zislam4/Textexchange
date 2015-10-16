@@ -9,8 +9,9 @@ var main = function() {
 			var bookinfos = JSON.parse(request.responseText);
 			console.log(bookinfos[1]["title"]);
 			for (var i = 0; i < bookinfos.length; i++) {
-				if (bookinfos[i]["title"] != null) {
+				if (bookinfos[i]["seller_name"] != null) {
 					$('<li>').text(bookinfos[i]["seller_name"]).prependTo('.bookinfo');
+					console.log(bookinfos[i]["title"]);
 				}
 			}
 		}
