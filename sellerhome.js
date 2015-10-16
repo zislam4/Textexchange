@@ -20,7 +20,6 @@ var main = function() {
 				}
 			}
 		}
-
 	};
 
 	request.send();

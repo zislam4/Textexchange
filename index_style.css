@@ -7,13 +7,6 @@ body {
 	margin: 0 auto;
 }
 
-/*.content {
-	position: absolute;
-   	top: 50%;
-   	left: 50%;
-   	transform: translate(-50%, -50%);
-}
-*/
 .logo {
 	padding-top: 200px;
 	width: 50%;
@@ -29,14 +22,3 @@ body {
 .options-buttons {
 	display: inline-block;
 }
-
-/*.options {
-	width: 100%;
-	margin: 0 auto;
-	display: inline-block;
-}
-
-.options img {
-	width: 30%;
-	display: inline-block;
-} */
