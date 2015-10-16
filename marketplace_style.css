@@ -1,11 +1,83 @@
-@import url(https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco);
+body {
+	margin: 0px;
+	font-family: futura;
+}
 
+/* Banner */
+
+.banner-background {
+	background-color: #606466;
+	width: 100%;
+	height: 200px;
+	margin: 0px;
+}
+
+.banner-words {
+	padding-top: 60px;
+	text-align: center;
+}			
+
+#banner-title {
+	font-size: 50px;
+	color: #FFD91D;
+	font-family: Signika;
+}
+
+#banner-subscript {
+	font-size: 15px;
+	color: white;
+}
+
+/* Search Bar */
+
+.searchbar {
+	padding-top: 10px;
+	background-color: red;
+	font-size: 30px;
+	text-align: center;
+}
+
+#bar {
+	width: 800px;
+	height: 30px;
+	background-color: #E6E6E6;
+	font-family: futura;
+	font-color: black;
+	font-size: 20px;
+	border: 1px solid transparent;
+}
+
+.search_button img {
+	background-color: palegreen;
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+}
+
+.marketplace {
+	background-color: orange;
+}
+
+.bookinfo {
+	text-align: center;
+	background-color: #FCDE60;
+	width: 100%;
+	width: 1000px;
+	vertical-align: center;
+	margin-left: 120px;
+	margin-top: 20px;
+}
+
+
+
+/*
 .menu {
     width: 100%;
     color: black;
     font-size: 30px;
     padding-left: 10px;
 }
+
 
 a {
 	display: inline-block;
@@ -21,39 +93,4 @@ h1 {
 	font-size: 60px;
 	text-align: center;
 	margin-top: -10px;
-}
-
-.searchbar {
-	font-size: 30px;
-	margin-top: -50px;
-	text-align: center;
-}
-
-#bar {
-	width: 700px;
-	height: 30px;
-	background-color: #E6E6E6;
-	font-family: 'Sue Ellen Francisco', cursive;
-	font-color: black;
-	font-size: 20px;
-	border: 1px solid transparent;
-}
-
-#button {
-	vertical-align: center;
-}
-
-.search_button {
-	display: inline-block;
-	font-family: 'Sue Ellen Francisco', cursive;
-}
-
-.bookinfo {
-	text-align: center;
-	border: solid;
-	width: 100%;
-	width: 1000px;
-	vertical-align: center;
-	margin-left: 120px;
-	margin-top: 20px;
-}
+}*/

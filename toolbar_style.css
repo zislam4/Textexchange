@@ -10,17 +10,19 @@
 
 .left {
 	display: inline-block;
-	text-align: left;
-	background-color: yellow;
 	float: left;
-
+	padding-left: 10px;
 }
 
 .right {
-	float: right;
 	display: inline-block;
-	text-align: right;
-	background-color:blue;
+	float: right;
+
+	padding-right: 10px;
+}
+
+.banner {
+	padding-top: 30px
 }
 
 a {
