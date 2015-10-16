@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Signika);
 
 .menu {
-	font-family: Futura;
+	font-family: Signika;
 	display: block;
     color: black;
     background-color: red;
@@ -9,18 +9,18 @@
 
 
 .left {
-/*	display: inline-block;
+	display: inline-block;
 	text-align: left;
-	background-color: yellow;*/
+	background-color: yellow;
 	float: left;
 
 }
 
 .right {
 	float: right;
-/*	display: inline-block;
+	display: inline-block;
 	text-align: right;
-	background-color:blue;*/
+	background-color:blue;
 }
 
 a {

@@ -15,17 +15,37 @@
 }			
 
 #banner-title {
-	font-size: 50px;
+	font-size: 60px;
 	color: #7FA9AE;
 	font-family: Signika;
 }
 
 #banner-subscript {
-	font-size: 15px;
+	font-family: Signika;
+	font-size: 20px;
 	color: white;
 }
 /* title page */
 
+#email {
+	font-family: Futura;
+	background-color: #bfd3df;
+	text-align: center;
+	padding-top: 10px;
+	font-size: 20px;
+	color: #606466;
+}
+
+#form {
+	background-color: white;
+	display: block;
+	text-align: center;
+
+}
+
 #email-form {
 	background-color: #bfd3df;
+	font-family: Futura;
+	display: inline-block;
 }
+
