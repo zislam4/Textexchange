@@ -19,13 +19,14 @@ body {
 }			
 
 #banner-title {
-	font-size: 50px;
+	font-size: 60px;
 	color: #7FA9AE;
 	font-family: Signika;
 }
 
 #banner-subscript {
-	font-size: 15px;
+	font-size: 18px;
+	font-family: Futura;
 	color: white;
 }
 
