@@ -60,7 +60,7 @@ body {
 	text-align: center;
 }			
 
-#banner-title {
+#banner-title-contact {
 	font-size: 60px;
 	color: #7FA9AE;
 	font-family: Signika;
@@ -75,6 +75,12 @@ body {
 #banner-title-sell {
 	font-size: 60px;
 	color: #FF991F;
+	font-family: Signika;
+}
+
+#banner-title-about {
+	font-size: 60px;
+	color: #83AACC;
 	font-family: Signika;
 }
 
