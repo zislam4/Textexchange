@@ -31,7 +31,7 @@ body {
 /* Search Bar */
 .searchbar {
 	padding-top: 20px;
-	background-color: red;
+/*	background-color: red;*/
 	font-size: 30px;
 	text-align: center;
 }
@@ -41,18 +41,10 @@ body {
 	height: 30px;
 	background-color: #E6E6E6;
 	font-family: futura;
-	font-color: black;
 	font-size: 20px;
 	border: 1px solid transparent;
+	text-indent: 10px;
 }
-
-.search_button img {
-	background-color: palegreen;
-/*	margin-top: 10px;*/
-	display: inline-block;
-	height: 25px;
-}
-
 
 input[type=submit] {
 	background:url("searchbaricon.png");
@@ -60,23 +52,36 @@ input[type=submit] {
     background-repeat: no-repeat;
     border: none;
     color: transparent;
-    height: 25px;
-    line-height: 30px;
+    height: 22px;
+    position: absolute;
+    margin-left: -35px;
+    margin-top: 12px;
 }
 
 
 /* Bulk */
 
 .marketplace {
-	background-color: orange;
+	/*background-color: orange;*/
+	padding-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
 	text-align: center;
 }
 
 .bookinfo {
 	display:inline-block;
-	text-align: center;
-	background-color: #FCDE60;
-	width: 700px;
+	width: 800px;
+}
+
+.bookinfo li {
+    margin-bottom: 10px;
+    background-color: #FCDE60;
+    height: 40px;
+    line-height: 40px;
+    list-style-type: none;
+    text-align: left;
+    padding-left: 10px;
 }
 
 
