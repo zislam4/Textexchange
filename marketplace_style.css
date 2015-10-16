@@ -29,9 +29,8 @@ body {
 }
 
 /* Search Bar */
-
 .searchbar {
-	padding-top: 10px;
+	padding-top: 20px;
 	background-color: red;
 	font-size: 30px;
 	text-align: center;
@@ -49,25 +48,36 @@ body {
 
 .search_button img {
 	background-color: palegreen;
+/*	margin-top: 10px;*/
 	display: inline-block;
-	height: 30px;
-	width: 30px;
+	height: 25px;
 }
+
+
+input[type=submit] {
+	background:url("searchbaricon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    color: transparent;
+    height: 25px;
+    line-height: 30px;
+}
+
+
+/* Bulk */
 
 .marketplace {
 	background-color: orange;
+	text-align: center;
 }
 
 .bookinfo {
+	display:inline-block;
 	text-align: center;
 	background-color: #FCDE60;
-	width: 100%;
-	width: 1000px;
-	vertical-align: center;
-	margin-left: 120px;
-	margin-top: 20px;
+	width: 700px;
 }
-
 
 
 /*

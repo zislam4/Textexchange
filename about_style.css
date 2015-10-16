@@ -38,8 +38,9 @@ body {
 
 .personInfo{
 	margin: 0px;
-	width: 23.5%;
-	display: inline-block;
+	width: 24.5%;
+	display: block;
+	float: left;
 	height: 400px;
 	/*background: palegreen;*/
 }
