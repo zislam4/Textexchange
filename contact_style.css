@@ -1,7 +1,9 @@
 /* contact page */
 @import url(https://fonts.googleapis.com/css?family=Signika);
 @import url(https://fonts.googleapis.com/css?family=PT+Sans);
-
+body {
+	margin: 0px;
+}
 .banner-background {
 	background-color: #606466;
 	width: 100%;
@@ -29,10 +31,10 @@
 
 #email {
 	font-family: Futura;
-	background-color: #bfd3df;
+	background-color: #BFD3D5;
 	text-align: center;
-	padding-top: 10px;
-	font-size: 20px;
+	padding: 5px;
+	font-size: 15px;
 	color: #606466;
 }
 
@@ -45,9 +47,22 @@
 }
 
 #email-form {
-	background-color: #bfd3df;
+	background-color: #BFD3D5;
 	font-family: Futura;
 	display: inline-block;
 	text-align: left;
+	padding: 30px;
+	margin-left: 6px;
+	color: #606466;
 }
 
+input {
+	margin: 6px 0;
+	padding: 5px;
+}
+
+#message {
+	height: 100px;
+	word-wrap: break-word;
+	word-break: break-word;
+}
