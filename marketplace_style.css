@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Signika);
+
 body {
 	margin: 0px;
 	font-family: futura;
@@ -18,13 +20,14 @@ body {
 }			
 
 #banner-title {
-	font-size: 50px;
+	font-size: 60px;
 	color: #FFD91D;
 	font-family: Signika;
 }
 
 #banner-subscript {
-	font-size: 15px;
+	font-family: Futura;
+	font-size: 18px;
 	color: white;
 }
 
