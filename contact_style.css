@@ -37,6 +37,7 @@
 }
 
 #form {
+	padding-top: 15px;
 	background-color: white;
 	display: block;
 	text-align: center;
@@ -47,5 +48,6 @@
 	background-color: #bfd3df;
 	font-family: Futura;
 	display: inline-block;
+	text-align: left;
 }
 
