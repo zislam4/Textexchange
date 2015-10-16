@@ -1,21 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco);
-
-.menu {
-    width: 100%;
-    color: black;
-    font-size: 30px;
-    padding-left: 10px;
-}
-
-a {
-	display: inline-block;
-	color: black;
-    font-family: 'Sue Ellen Francisco', cursive;
-    font-size: 40px;
-    text-decoration: none;
-	background-color: none;
-}
-
 .container{
 	width:1250px;
 	margin: 0 auto;

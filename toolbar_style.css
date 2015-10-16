@@ -1,32 +1,41 @@
-@import url(https://fonts.googleapis.com/css?family=Signika);
-
 .menu {
-	font-family: Signika;
+	font-family: Futura;
 	display: block;
     color: black;
+    padding-top: 10px;
+    padding-bottom: 20px;
+/*    background-color: yellow;*/
 }
 
 .left {
 	display: inline-block;
 	float: left;
-	padding-left: 10px;
+	margin-left: 10px;
+/*	background-color: green;*/
 }
 
 .right {
 	display: inline-block;
 	float: right;
-
-	padding-right: 10px;
+	margin-right: 10px;
+/*	background-color: blue;*/
 }
 
 .banner {
-	padding-top: 30px
+	padding-top: 18px;
+}
+
+.toolapplyBorderLeft{
+	border-left: solid 2px gray; 
 }
 
 a {
+/*	background-color: red;*/
 	display: inline-block;
 	color: #606466;
     font-size: 20px;
     text-decoration: none;
 	background-color: none;
+	padding-left: 15px;
+	padding-right: 15px;
 } 
