@@ -9,18 +9,19 @@
 
 
 .left {
-/*	display: inline-block;
-	text-align: left;
-	background-color: yellow;*/
+	display: inline-block;
 	float: left;
-
+	padding-left: 10px;
 }
 
 .right {
+	display: inline-block;
 	float: right;
-/*	display: inline-block;
-	text-align: right;
-	background-color:blue;*/
+	padding-right: 10px;
+}
+
+.banner {
+	padding-top: 30px
 }
 
 a {
