@@ -7,6 +7,11 @@
 /*    background-color: yellow;*/
 }
 
+a:hover {
+	text-shadow: 0 0 8px #BFD3D5;
+
+}
+
 .left {
 	display: inline-block;
 	float: left;
