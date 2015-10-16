@@ -2,11 +2,8 @@
 
 .menu {
 	font-family: Futura;
-	display: block;
     color: black;
-    background-color: red;
 }
-
 
 .left {
 	display: inline-block;
