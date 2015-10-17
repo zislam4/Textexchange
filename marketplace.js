@@ -10,10 +10,11 @@ var main = function() {
 			console.log(bookinfos[1]["title"]);
 			for (var i = 0; i < bookinfos.length; i++) {
 				if (bookinfos[i]["seller_name"] != null) {
-					$('<li>').text(bookinfos[i]["seller_name"]).prependTo('.bookinfo');
+					$('<li>').text(bookinfos[i]["title"]).prependTo('.bookinfo');
 					console.log(bookinfos[i]["title"]);
+			
+					}
 				}
-			}
 		}
 
 	};
