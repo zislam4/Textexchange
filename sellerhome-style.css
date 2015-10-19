@@ -1,4 +1,4 @@
-.add-books {
+.add-books-button {
 	background-color: #F7BE81;
 	text-align: center;
 	width: 800px;
@@ -6,6 +6,10 @@
 	margin: 20px auto;
 	color: white;
 	font-size: 20px;
+}
+
+.add-books {
+	background-color: red;
 }
 
 .managebooks {
@@ -26,6 +30,7 @@
     margin: 10px auto;
 	line-height: 40px;
 	list-style-type: none;
+	text-align: left;
 	padding-left: 10px; 
 }
 
