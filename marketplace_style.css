@@ -49,7 +49,7 @@ input[type=submit] {
 }
 
 .bookinfo li {
-    margin-bottom: 10px;
+    margin-top: 8px;
     background-color: #FCDE60;
     height: 40px;
     line-height: 40px;
@@ -58,6 +58,8 @@ input[type=submit] {
     padding-left: 10px; 
 }
 
-.test {
-	color:red;
+.hide {
+	background-color: #F2EEDD;
+	height: 150px;
+	padding-bottom: 20px;
 }

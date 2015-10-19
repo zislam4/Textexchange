@@ -10,17 +10,29 @@ var main = function() {
 			console.log(bookinfos[1]["title"]);
 			for (var i = 0; i < bookinfos.length; i++) {
 				if (bookinfos[i]["seller_name"] != null) {
-					$('<li>').text(bookinfos[i]["title"]).prependTo('.bookinfo');
+					var li = $('<li>').text(bookinfos[i]["title"]);
+					li.addClass("bookItem");
+
+					$(".bookinfo").append(li);
+					$(".bookinfo").append("<div class='hide'> hello </div>");
 					console.log(bookinfos[i]["title"]);
-			
-					}
+
 				}
+			}
+			$(".bookinfo").find(".hide").hide();
+			$("li.bookItem").click(function() {
+				console.log($(this).text());
+				$(this).next().append("li.bookItem".title);
+				$(this).next().toggle();
+			});	
+			
 		}
 
 	};
 
 	request.send();
 
-}
+};
 
 $(document).ready(main);
+
