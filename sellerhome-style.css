@@ -1,4 +1,17 @@
-.container{
+.add-books {
+	background-color: #FF991F;
+	text-align: center;
+	padding: 10px;
+	margin: 20px 500px;
+	color: white;
+	font-size: 20px;
+}
+
+.mybookinfo {
+	background-color: red;
+}
+
+/*.container{
 	width:1250px;
 	margin: 0 auto;
 }
@@ -59,4 +72,4 @@ ul.tabs li.current{
 	padding-bottom: 10px;
 	word-wrap: break-word;
 	min-height: 42px;
-}
+}*/
