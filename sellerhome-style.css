@@ -10,6 +10,16 @@
 
 .add-books {
 	background-color: red;
+	width: 800px;
+	display: none;
+}
+
+.add-books, .add-books-button {
+	margin: 0px;
+	padding: 5px;
+	text-align: center;
+	background: #ddd;
+	border: solid 1px #fff;
 }
 
 .managebooks {

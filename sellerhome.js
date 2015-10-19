@@ -24,11 +24,11 @@ var main = function() {
 
 	request.send();
 	
-	// $(document).ready(function () {
-	// 	$("add-books-button").click(function() {
-	// 		$("add-books").slideToggle("slow");
-	// 	}
-	// }
+	$(document).ready(function () {
+		$("add-books-button").click(function() {
+			$("add-books").slideToggle("slow");
+		}
+	}
 
 
 // 	// Begin interactive functions
