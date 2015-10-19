@@ -1,5 +1,5 @@
 .add-books {
-	background-color: #FF991F;
+	background-color: #F7BE81;
 	text-align: center;
 	padding: 10px;
 	margin: 20px 100px;
@@ -8,8 +8,11 @@
 }
 
 .mybookinfo {
-	background-color: #606466;
+	background-color: #FF991F;
+	width: 800px;
+	display: inline-block;
 	color: white;
+	line-height: 40px;
 	margin: 20px 100px;
     height: 40px;
     line-height: 40px;
