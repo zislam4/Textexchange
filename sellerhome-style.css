@@ -8,7 +8,12 @@
 }
 
 .mybookinfo {
-	background-color: red;
+	background-color: #606466;
+	margin-bottom: 10px;
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+    padding-left: 10px; 
 }
 
 /*.container{
