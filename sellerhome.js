@@ -16,9 +16,22 @@ var main = function() {
 			var bookinfos = JSON.parse(request.responseText);
 			for (var i = 0; i < bookinfos.length; i++) {
 				if (bookinfos[i]["title"] != null) {
-					$('<li>').text(bookinfos[i]["title"]).prependTo('.mybookinfo');
+					// $('<li>').text(bookinfos[i]["title"]).prependTo('.mybookinfo');
+					var li = $('<li>').text(bookinfos[i]["title"]);
+					li.addClass("bookItem");
+
+					$(".mybookinfo").append(li);
+					$(".mybookinfo").append("<div class='hide'> hello </div>");
+					console.log(bookinfos[i]["title"]);
 				}
 			}
+		
+		$(".bookinfo").find(".hide").hide();
+		$("li.bookItem").click(function() {
+			console.log($(this).text());
+			$(this).next().append("li.bookItem".title);
+			$(this).next().toggle();
+		});	
 		}
 	};
 
