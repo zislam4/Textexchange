@@ -11,9 +11,12 @@
 .mybookinfo {
 	background-color: #FF991F;
 	width: 800px;
+	height: 40px;
 	color: white;
     height: 40px;
     margin: 10px auto;
+	line-height: 40px;
+	list-style-type: none;
 }
 
 .container{
