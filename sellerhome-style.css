@@ -21,6 +21,7 @@
 .mybookinfo {
 	display: inline-block;
 	width: 800px;
+	background-color: orange;
 }
 
 .mybookinfo li {
