@@ -24,13 +24,14 @@
 }
 
 .mybookinfo li {
+	display: inline-block;
 	background-color: #FF991F;
 	height: 40px;
 	color: black;
     margin: 10px auto;
 	line-height: 40px;
 	list-style-type: none;
-	text-align: center;
+	text-align: left;
 	padding-left: 10px; 
 }
 
