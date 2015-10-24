@@ -19,17 +19,14 @@
 }
 
 .mybookinfo {
-	display: inline-block;
+	/*display: inline-block;*/
 	width: 800px;
-	background-color: orange;
 }
 
 .mybookinfo li {
+	margin-top: 8px;
 	background-color: #FF991F;
 	height: 40px;
-	color: black;
-	width: 100%;
-    margin: 0px auto;
 	line-height: 40px;
 	list-style-type: none;
 	text-align: left;

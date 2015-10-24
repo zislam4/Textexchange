@@ -11,7 +11,7 @@ body {
 
 .logo {
 	padding-top: 200px;
-	width: 50%;
+	width: 500px;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -26,16 +26,8 @@ body {
 
 .options-buttons-left {
 	float: left;
-	max-width: 100%;
-    height: auto;
-    width: auto\9; 
-	/*display: inline-block;*/
 }
 
 .options-buttons-right {
 	float: right;
-	max-width: 100%;
-    height: auto;
-    width: auto\9; 
-	/*display: inline-block;*/
 }
