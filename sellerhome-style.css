@@ -19,12 +19,12 @@
 }
 
 .mybookinfo {
-	/*display: inline-block;*/
+	margin-left: auto;
+	margin-right: auto;
 	width: 800px;
 }
 
 .mybookinfo li {
-	width: 100%;
 	margin-top: 8px;
 	background-color: #FF991F;
 	height: 40px;
