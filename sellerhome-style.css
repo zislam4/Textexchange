@@ -24,11 +24,10 @@
 }
 
 .mybookinfo li {
-	display: inline-block;
 	background-color: #FF991F;
 	height: 40px;
 	color: black;
-    margin: 10px auto;
+    margin: 0px auto;
 	line-height: 40px;
 	list-style-type: none;
 	text-align: left;
