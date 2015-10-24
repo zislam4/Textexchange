@@ -24,7 +24,7 @@
 	width: 800px;
 }
 
-.mybookinfo li {
+.mybookinfo a {
 	margin-top: 8px;
 	background-color: #FF991F;
 	height: 40px;
