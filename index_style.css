@@ -5,20 +5,37 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 	margin: 0 auto;
+
+	
 }
 
 .logo {
 	padding-top: 200px;
 	width: 50%;
 	margin: 0 auto;
+	text-align: center;
 }
 
 .options {
-	width: 30%;
+	width: 100%;
 	display: inline-block;
 	margin: 0 auto;
+	text-align: center;
+	
 }
 
-.options-buttons {
-	display: inline-block;
+.options-buttons-left {
+	float: left;
+	max-width: 100%;
+    height: auto;
+    width: auto\9; 
+	/*display: inline-block;*/
+}
+
+.options-buttons-right {
+	float: right;
+	max-width: 100%;
+    height: auto;
+    width: auto\9; 
+	/*display: inline-block;*/
 }
