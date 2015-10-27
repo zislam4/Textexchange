@@ -14,17 +14,9 @@ body {
 	text-align: center;
 }
 
-.options {
-	width: 100%;
-	display: inline-block;
-	margin: 0 auto;
-	text-align: center;
+img.button {
+	width: 80%;
+	padding: 0px;
+	margin: 0px;
 }
 
-.options-buttons-left {
-	float: left;
-}
-
-.options-buttons-right {
-	float: right;
-}
