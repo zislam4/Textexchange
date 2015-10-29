@@ -1,14 +1,19 @@
 @import url(https://fonts.googleapis.com/css?family=Signika);
 
-body {
+/*body {
 	background: url('frontpage-background.gif');
 	background-size: 1500px 1200px;
 	background-repeat: no-repeat;
 	background-position: center;
 }
+*/
+
+video {
+	width: 100%;
+}
 
 .logo {
-	padding-top: 20%;
+	padding-top: 15%;
 	width: 500px;
 	margin: 0 auto;
 	text-align: center;
@@ -20,3 +25,22 @@ img.button {
 	margin: 0px;
 }
 
+
+.container{ 
+	position:relative; 
+	padding: 0px;
+	text-align: center;
+	width: 100%;
+}
+
+.container video {
+    position:relative;
+    z-index:0;
+}
+.overlay {
+    position:absolute;
+    width: 100%;
+    top:0;
+    left:0;
+    z-index:1;
+}
