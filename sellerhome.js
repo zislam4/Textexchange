@@ -39,7 +39,7 @@ var main = function() {
 
 	// Begin interactive functions
 
-	$('#add-books-button"').click(function(){
+	$('.add-books-button"').click(function(){
 		console.log("inside the freaking fucntion");
 	});
 
