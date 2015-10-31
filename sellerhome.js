@@ -36,14 +36,6 @@ var main = function() {
 	};
 
 	request.send();
-	
-	$(document).ready(function () {
-		main();
-		$("add-books-button").click(function() {
-			$("add-books").slideToggle("slow");
-		}
-	}
-
 
 	// Begin interactive functions
 	$('ul.tabs li').click(function(){
