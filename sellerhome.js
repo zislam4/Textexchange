@@ -38,6 +38,12 @@ var main = function() {
 	request.send();
 
 	// Begin interactive functions
+
+	$('add-books-button"').click(function(){
+		console.log("inside the freaking fucntion");
+	});
+
+
 	$('ul.tabs li').click(function(){
 		var tab_id = $(this).attr('data-tab');
 
@@ -46,7 +52,7 @@ var main = function() {
 
 		$(this).addClass('current');
 		$("#"+tab_id).addClass('current');
-	})
+	});
 
 	$('.title-box').keyup(function() {
 		var title_length = $(this).val().length;
