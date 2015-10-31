@@ -45,18 +45,12 @@ var main = function() {
 		node.appendChild(textnode);
 		console.log("appended to the node");
 		console.log(node);
-		
-		$(this).appendChild(node);
+
+
+		$(this).append(node);
 		console.log("after appending?");
 		$(this).next().toggle();
 	});
-
-
-var node = document.createElement("LI");                 // Create a <li> node
-var textnode = document.createTextNode("Water");         // Create a text node
-node.appendChild(textnode);                              // Append the text to <li>
-document.getElementById("myList").appendChild(node);     // Append <li> to <ul> with id="myList"
-
 
 
 // var p = document.createElement("p");
