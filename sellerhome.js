@@ -10,8 +10,6 @@ var main = function() {
 	request.open("GET", url, true);
 
 	request.onreadystatechange = function () {
-		console.log(request.readyState);
-		console.log(request.status);
 		if (request.readyState == 4 && request.status == 200) {
 			var bookinfos = JSON.parse(request.responseText);
 			for (var i = 0; i < bookinfos.length; i++) {
@@ -22,13 +20,11 @@ var main = function() {
 
 					$(".mybookinfo").append(li);
 					$(".mybookinfo").append("<div class='hide'> hello </div>");
-					console.log(bookinfos[i]["title"]);
 				}
 			}
 		
 		$(".bookinfo").find(".hide").hide();
 		$("li.bookItem").click(function() {
-			console.log($(this).text());
 			$(this).next().append("li.bookItem".title);
 			$(this).next().toggle();
 		});	
