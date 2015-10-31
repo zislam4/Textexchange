@@ -37,11 +37,12 @@ var main = function() {
 
 
 		// Creates the form 
-		var form = document.createElement("form");
+		// var form = document.createElement("form");
 		var formtext = document.createTextNode("hello this is the form");
-		form.appendChild(formtext);
-		console.log("appended to the form");
-		console.log(form);
+		formtext.setAttribute("id", "form");
+		// form.appendChild(formtext);
+		// console.log("appended to the form");
+		// console.log(form);
 
 	$('.add-books-button').click(function(){
 		// appends form to button?
