@@ -47,45 +47,17 @@ var main = function() {
 		console.log("appended to the form");
 		console.log(form);
 
-		// Appends form to child under add books button
-		var formbody = document.createElement("addbookform");
-		formbody.appendChild(form);
-		console.log("formbody");
-		console.log(formbody);
+		// // Appends form to child under add books button
+		// var formbody = document.createElement("addbookform");
+		// formbody.appendChild(form);
+		// console.log("formbody");
+		// console.log(formbody);
 
-		// appends form to button?
-		$(this).append(formbody);
+		// // appends form to button?
+		$(this).next().append(form);
 		console.log("after appending?");
 		$(this).next().toggle();
 	});
-
-
-// var p = document.createElement("p");
-// document.body.appendChild(p);
-
-// 		$(this).next().appendChild(
-// 			"<div class = 'add-books-info'> Booksinfo </div>");
-	
-// 	});
-
-
-
-
-// 	var li = $('<li>').text(bookinfos[i]["title"]);
-// 					li.addClass("bookItem");
-// 					console.log(bookinfos[i]);
-// 					$(".bookinfo").append(li);
-
-
-		// 	$(".bookinfo").find(".hide").hide();
-		// 	$("li.bookItem").click(function() {
-		// 		console.log($(this));
-		// 		$(this).next().append("li.bookItem".title);
-		// 		$(this).next().toggle();
-		// 	});	
-			
-		// }
-
 
 
 	$('ul.tabs li').click(function(){
