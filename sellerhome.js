@@ -40,12 +40,27 @@ var main = function() {
 	// Begin interactive functions
 
 	$('.add-books-button').click(function(){
-		$(this).appendChild(
-			"<div class = 'add-books-info'> Booksinfo </div>");
+		var addbookform = "this is the form";
+		$(this).next().appendChild(addbookform);
 		console.log("after appending?");
-		$(this).toggle();
+		$(this).next().toggle();
 	});
 
+// var p = document.createElement("p");
+// document.body.appendChild(p);
+
+// 		$(this).next().appendChild(
+// 			"<div class = 'add-books-info'> Booksinfo </div>");
+	
+// 	});
+
+
+
+
+// 	var li = $('<li>').text(bookinfos[i]["title"]);
+// 					li.addClass("bookItem");
+// 					console.log(bookinfos[i]);
+// 					$(".bookinfo").append(li);
 
 
 		// 	$(".bookinfo").find(".hide").hide();
