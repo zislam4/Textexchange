@@ -40,11 +40,23 @@ var main = function() {
 	// Begin interactive functions
 
 	$('.add-books-button').click(function(){
-		$(this).append(
+		$(this).next().append(
 			"<div class = 'add-books-info'> Booksinfo </div>");
 		console.log("after appending?");
-		$(this).toggle();
+		$(this).next().toggleDown();
 	});
+
+
+
+		// 	$(".bookinfo").find(".hide").hide();
+		// 	$("li.bookItem").click(function() {
+		// 		console.log($(this));
+		// 		$(this).next().append("li.bookItem".title);
+		// 		$(this).next().toggle();
+		// 	});	
+			
+		// }
+
 
 
 	$('ul.tabs li').click(function(){
