@@ -37,7 +37,7 @@ var main = function() {
 
 	$('.add-books-button').click(function(){
 		// Creates the form 
-		var form = document.createElement("form");
+		var form = document.createElement("add-books-info");
 		var formtext = document.createTextNode("hello this is the form");
 		form.appendChild(formtext);
 		console.log("appended to the form");
