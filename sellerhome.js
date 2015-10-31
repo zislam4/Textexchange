@@ -42,7 +42,7 @@ var main = function() {
 	$('.add-books-button').click(function(){
 		$(this).append(
 			"<div class = 'add-books-info'> Booksinfo </div>");
-		console.log(after appending?);
+		console.log("after appending?");
 		$(this).toggle();
 	});
 
