@@ -40,15 +40,20 @@ var main = function() {
 	// Begin interactive functions
 
 	$('.add-books-button').click(function(){
+		// Creates the form 
 		var form = document.createElement("form");
 		var formtext = document.createTextNode("hello this is the form");
 		form.appendChild(formtext);
-		console.log("appended to the node");
-		console.log(node);
+		console.log("appended to the form");
+		console.log(form);
 
+		// Appends form to child under add books button
 		var formbody = document.createElement("addbookform");
 		formbody.appendChild(form);
+		console.log("formbody");
+		console.log(formbody);
 
+		// appends form to button?
 		$(this).append(formbody);
 		console.log("after appending?");
 		$(this).next().toggle();
