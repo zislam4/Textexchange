@@ -38,6 +38,23 @@ var main = function() {
 	request.send();
 
 	// Begin interactive functions
+
+
+	$("#add-books-button").click(function() {
+		console.log("inside add books button");
+		// console.log($(this));
+		// $(this).next().toggle();
+
+	});
+
+			// 	$("li.bookItem").click(function() {
+			// 	console.log($(this));
+			// 	$(this).next().append("li.bookItem".title);
+			// 	$(this).next().toggle();
+			// });	
+
+
+
 	$('ul.tabs li').click(function(){
 		var tab_id = $(this).attr('data-tab');
 
