@@ -37,10 +37,9 @@ var main = function() {
 
 
 		// Creates the form 
-		// var form = document.createElement("form");
+		var form = getElementById("add-books-form");
 		var formtext = document.createTextNode("hello this is the form");
-		formtext.setAttribute("id", "form");
-		// form.appendChild(formtext);
+		form.appendChild(formtext);
 		// console.log("appended to the form");
 		// console.log(form);
 
