@@ -40,14 +40,16 @@ var main = function() {
 	// Begin interactive functions
 
 	$('.add-books-button').click(function(){
-		var node = document.createElement("addbookform");
-		var textnode = document.createTextNode("hello this is the form");
-		node.appendChild(textnode);
+		var form = document.createElement("form");
+		var formtext = document.createTextNode("hello this is the form");
+		form.appendChild(formtext);
 		console.log("appended to the node");
 		console.log(node);
 
+		var formbody = document.createElement("addbookform");
+		formbody.appendChild(form);
 
-		$(this).append(node);
+		$(this).append(formbody);
 		console.log("after appending?");
 		$(this).next().toggle();
 	});
