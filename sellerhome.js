@@ -40,7 +40,7 @@ var main = function() {
 	// Begin interactive functions
 
 	$('.add-books-button').click(function(){
-		$(this).appendChild(
+		$(this).append(
 			"<div class = 'add-books-info'> Booksinfo </div>");
 		console.log("after appending?");
 		$(this).toggle();
