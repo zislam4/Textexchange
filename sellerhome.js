@@ -43,7 +43,7 @@ var main = function() {
 		$(this).next().append(
 			"<div class = 'add-books-info'> Booksinfo </div>");
 		console.log("after appending?");
-		$(this).next().toggleDown();
+		$(this).next().toggle();
 	});
 
 
