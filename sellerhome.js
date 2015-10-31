@@ -40,10 +40,10 @@ var main = function() {
 	// Begin interactive functions
 
 	$('.add-books-button').click(function(){
-		$(this).next().append(
+		$(this).appendChild(
 			"<div class = 'add-books-info'> Booksinfo </div>");
 		console.log("after appending?");
-		$(this).next().toggle();
+		$(this).toggle();
 	});
 
 
