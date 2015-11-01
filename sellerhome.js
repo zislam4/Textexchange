@@ -40,9 +40,7 @@ var main = function() {
 		// $("#form").next().append(form);
 
 
-	// $('.add-books-button').click(function(){
-		
-		$('#add-books-form').live('click', function(event) {
+	$('.add-books-button').click(function(){
 			console.log("inside click function");
 			$('#add-books-form').toggle('show');
 		});
