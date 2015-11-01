@@ -38,11 +38,14 @@ var main = function() {
 		// Creates the form 
 		// var form = "<div id = 'add-books-form'> FORM IS HERE </div>";
 		// $("#form").next().append(form);
-
+console.log("git");
 
 	$('.add-books-button').click(function(){
 			console.log("inside click function");
-			$('#add-books-form').hide();
+			$("#add-books-form").append("this is the form");
+			console.log("calling show");
+			$('#add-books-form').show();
+			console.log("called show");
 		});
 
 
