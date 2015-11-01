@@ -42,7 +42,7 @@ var main = function() {
 
 	$('.add-books-button').click(function(){
 			console.log("inside click function");
-			$('#add-books-form').toggle('show');
+			$('#add-books-form').show();
 		});
 
 
