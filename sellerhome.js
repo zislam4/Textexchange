@@ -38,21 +38,30 @@ var main = function() {
 
 		// Creates the form 
 		var form = "<div id = 'add-books-form'> FORM IS HERE </div>";
+		$("#form").next().append(form);
 
-		// document.createElement("div"); // get element by ID
-		// form.className="add-books-form";
-		// var formtext = document.createTextNode("hello this is the form");
+// $(document).ready(function(){
+//     $("#hide").click(function(){
+//         $("p").hide();
+//     });
+//     $("#show").click(function(){
+//         $("p").show();
+//     });
+// });
 
-
-		// form.appendChild(formtext);
-		// // console.log("appended to the form");
-		// console.log(form);
 
 	$('.add-books-button').click(function(){
-		// appends form to button?
-		$(this).next().append(form);
-		console.log("after appending?");
-		$(this).next().toggle();
+
+		$("add-books-form").hide();
+		$("add-books-form").show();
+
+
+
+
+		// // appends form to button?
+		// $(this).next().append(form);
+		// console.log("after appending?");
+		// $(this).next().toggle();
 	});
 
 
