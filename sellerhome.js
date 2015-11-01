@@ -44,7 +44,6 @@ var main = function() {
 			console.log("inside click function");
 			$('#add-books-form').toggle('show');
 		});
-	});
 
 
 	$('ul.tabs li').click(function(){
