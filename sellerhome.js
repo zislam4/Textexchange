@@ -37,10 +37,15 @@ var main = function() {
 
 
 		// Creates the form 
-		var form = document.getElementById("add-books-form");
-		var formtext = document.createTextNode("hello this is the form");
-		form.appendChild(formtext);
-		// console.log("appended to the form");
+		var form = "<div id = 'add-books-form'> FORM IS HERE </div>";
+
+		// document.createElement("div"); // get element by ID
+		// form.className="add-books-form";
+		// var formtext = document.createTextNode("hello this is the form");
+
+
+		// form.appendChild(formtext);
+		// // console.log("appended to the form");
 		// console.log(form);
 
 	$('.add-books-button').click(function(){
