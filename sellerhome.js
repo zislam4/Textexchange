@@ -35,54 +35,18 @@ var main = function() {
 
 	// Begin interactive functions
 
-
 		// Creates the form 
 		// var form = "<div id = 'add-books-form'> FORM IS HERE </div>";
 		// $("#form").next().append(form);
 
-// $(document).ready(function(){
-//     $("#hide").click(function(){
-//         $("p").hide();
-//     });
-//     $("#show").click(function(){
-//         $("p").show();
-//     });
-// });
 
-
-	$('.add-books-button').click(function(){
-		console.log("inside click function");
-		$("add-books-form").slideToggle();
-		if($(this).text() == 'Hide') {
-			$(this).text('Show');
-		} else {
-			$(this).text('Hide');
-		}
+	// $('.add-books-button').click(function(){
+		
+		$('#add-books-form').live('click', function(event) {
+			console.log("inside click function");
+			$('#add-books-form').toggle('show');
+		});
 	});
-
-
-
-
-
-// 		}
-// 		$("add-books-form").hide();
-// 		$("add-books-form").show();
-
-// 		// // appends form to button?
-// 		// $(this).next().append(form);
-// 		// console.log("after appending?");
-// 		// $(this).next().toggle();
-// 	});
-
-
-// $('#togButton').click(function() {
-//     $('.target').slideToggle(500);
-//     if( $(this).text() == 'Hide' ) {
-//         $(this).text('Show');
-//     } else {
-//         $(this).text('Hide');
-//     }
-// });
 
 
 	$('ul.tabs li').click(function(){
