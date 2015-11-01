@@ -37,8 +37,8 @@ var main = function() {
 
 
 		// Creates the form 
-		var form = "<div id = 'add-books-form'> FORM IS HERE </div>";
-		$("#form").next().append(form);
+		// var form = "<div id = 'add-books-form'> FORM IS HERE </div>";
+		// $("#form").next().append(form);
 
 // $(document).ready(function(){
 //     $("#hide").click(function(){
@@ -51,12 +51,9 @@ var main = function() {
 
 
 	$('.add-books-button').click(function(){
-
+		console.log("inside click function");
 		$("add-books-form").hide();
 		$("add-books-form").show();
-
-
-
 
 		// // appends form to button?
 		// $(this).next().append(form);
