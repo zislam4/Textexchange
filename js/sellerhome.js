@@ -1,52 +1,49 @@
 var main = function() {
-
+	$('#add-books-form').hide();
 	// Saving user_info from sellerhome.html
-	var seller_name = user_info.name;
-	var seller_id = user_info.id;
+
+	// var seller_name = user_info.name;
+	// var seller_id = user_info.id;
 
 	// Printing seller's books
-	var request = new XMLHttpRequest();
-	var url = "https://morning-peak-4677.herokuapp.com/managebooks?"+"seller_id="+seller_id;
-	request.open("GET", url, true);
+	// var request = new XMLHttpRequest();
+	// var url = "https://morning-peak-4677.herokuapp.com/managebooks?"+"seller_id="+seller_id;
+	// request.open("GET", url, true);
 
-	request.onreadystatechange = function () {
-		if (request.readyState == 4 && request.status == 200) {
-			var bookinfos = JSON.parse(request.responseText);
-			for (var i = 0; i < bookinfos.length; i++) {
-				if (bookinfos[i]["title"] != null) {
-					// $('<li>').text(bookinfos[i]["title"]).prependTo('.mybookinfo');
-					var li = $('<li>').text(bookinfos[i]["title"]);
-					li.addClass("bookItem");
+	// request.onreadystatechange = function () {
+	// 	if (request.readyState == 4 && request.status == 200) {
+	// 		var bookinfos = JSON.parse(request.responseText);
+	// 		for (var i = 0; i < bookinfos.length; i++) {
+	// 			if (bookinfos[i]["title"] != null) {
+	// 				// $('<li>').text(bookinfos[i]["title"]).prependTo('.mybookinfo');
+	// 				var li = $('<li>').text(bookinfos[i]["title"]);
+	// 				li.addClass("bookItem");
 
-					$(".mybookinfo").append(li);
-					$(".mybookinfo").append("<div class='hide'> hello </div>");
-				}
-			}
+	// 				$(".mybookinfo").append(li);
+	// 				$(".mybookinfo").append("<div class='hide'> hello </div>");
+	// 			}
+	// 		}
 		
-		$(".bookinfo").find(".hide").hide();
-		$("li.bookItem").click(function() {
-			$(this).next().append("li.bookItem".title);
-			$(this).next().toggle();
-		});	
-		}
-	};
+	// 	$(".bookinfo").find(".hide").hide();
+	// 	$("li.bookItem").click(function() {
+	// 		$(this).next().append("li.bookItem".title);
+	// 		$(this).next().toggle();
+	// 	});	
+	// 	}
+	// };
 
-	request.send();
+	// request.send();
+
 
 	// Begin interactive functions
 
 		// Creates the form 
 		// var form = "<div id = 'add-books-form'> FORM IS HERE </div>";
 		// $("#form").next().append(form);
-console.log("git");
 
 	$('.add-books-button').click(function(){
-			console.log("inside click function");
-			$("#add-books-form").append("this is the form");
-			console.log("calling show");
-			$('#add-books-form').show();
-			console.log("called show");
-		});
+			$(this).next().toggle();
+	});
 
 
 	$('ul.tabs li').click(function(){
@@ -69,7 +66,7 @@ console.log("git");
 		}
 	});
 
-	$('.btn').click(function() {
+	$('.button-group').click(function() {
 		var xhr = new XMLHttpRequest();
 		xhr.open("post", "https://morning-peak-4677.herokuapp.com/add", true);
 
@@ -84,7 +81,7 @@ console.log("git");
 		var cond = $('.cond-box').val(); 		
 
 		var bookinfo = "seller_name="+seller_name+"&seller_id="+seller_id+"&title="+title+"&author="+author+"&vol="+vol		+"&edition="+edi+"&classname="+clname+"&coursenum="+cnum+"&prof="+prof+"&price="+price+"&condition="+cond;
-
+		console.log(bookinfo);
 		
 		xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 		xhr.setRequestHeader("Content-length", bookinfo.length);
@@ -92,16 +89,16 @@ console.log("git");
 
 		xhr.send(bookinfo);
 
-		$('<li>').text(title).prependTo('.posts');
-		$('<li>').text(title).prependTo('.manage-books');
-		$('<li>').text(author).prependTo('.posts');
-		$('<li>').text(vol).prependTo('.posts');
-		$('<li>').text(edi).prependTo('.posts');
-		$('<li>').text(clname).prependTo('.posts');
-		$('<li>').text(cnum).prependTo('.posts');
-		$('<li>').text(prof).prependTo('.posts');
-		$('<li>').text(price).prependTo('.posts');
-		$('<li>').text(cond).prependTo('.posts');
+		// $('<li>').text(title).prependTo('.posts');
+		// $('<li>').text(title).prependTo('.manage-books');
+		// $('<li>').text(author).prependTo('.posts');
+		// $('<li>').text(vol).prependTo('.posts');
+		// $('<li>').text(edi).prependTo('.posts');
+		// $('<li>').text(clname).prependTo('.posts');
+		// $('<li>').text(cnum).prependTo('.posts');
+		// $('<li>').text(prof).prependTo('.posts');
+		// $('<li>').text(price).prependTo('.posts');
+		// $('<li>').text(cond).prependTo('.posts');
 
 		$('.title-box').val('');
 		$('.author-box').val('');

@@ -13,7 +13,7 @@
 </head>
 <body>
 
-// <script>
+<script>
 
 var user_info;
 // This is called with the results from from FB.getLoginStatus().
@@ -107,13 +107,9 @@ the JavaScript SDK to present a graphical Login button that triggers
 the FB.login() function when clicked.
 -->
 
-<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-</fb:login-button>
-
 <!-- ADD A LOGOUT BUTTON FOOL -->
 
-<div id="status">
-</div>
+
 	
 
 <!-- Toolbar  -->
@@ -138,9 +134,59 @@ the FB.login() function when clicked.
 		</div>
 	</div>
 
+<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+</fb:login-button>
+<div id="status">
+</div>
 <!--Tab Headers--> 
 <div class="add-books-button"> Add textbooks! </div>
-<div class="add-books-form"></div>
+
+<div id="add-books-form"> 
+	<form>
+		<div class="row">
+			<div class="form-group col-md-6">
+				<textarea class="form-control title-box" rows="1" placeholder="Title"></textarea>
+			</div>
+			<div class="form-group col-md-4">
+				<textarea class="form-control author-box" rows="1" placeholder="Author"></textarea>
+			</div>
+			<div class="form-group col-md-1">
+				<textarea class="form-control vol-box" rows="1" placeholder="Vol"></textarea>
+			</div>
+			<div class="form-group col-md-1">
+				<textarea class="form-control edi-box" rows="1" placeholder="Edition"></textarea>
+			</div>
+			</div>
+			<div class="row">
+			<div class="form-group col-md-4">
+				<textarea class="form-control class-box" rows="1" placeholder="Class Name"></textarea>
+			</div>
+			<div class="form-group col-md-2">
+				<textarea class="form-control course-box" rows="1" placeholder="Course Number"></textarea>
+			</div>
+			<div class="form-group col-md-4">
+				<textarea class="form-control prof-box" rows="1" placeholder="Professor"></textarea>
+			</div>
+			<div class="form-group col-md-2">
+				<textarea class="form-control price-box" rows="1" placeholder="Price"></textarea>
+			</div>
+		</div>
+		<div class="row">
+			<div class="form-group col-md-12">
+				<textarea class="form-control cond-box" rows="1" placeholder="Condition/Description"></textarea>
+			</div>
+		</div>
+		<div class="row">
+				<div class="button-group pull-right">
+					<a href="#" class="btn btn-primary"> Add to marketplace </a>
+				</div>
+		</div>
+<!-- 			<ul class="posts">
+			</ul> -->
+		</form> 
+		</div>
+	</form>
+</div>
 
 <div class="manage-books">
 	<div class="mybookinfo">
@@ -149,26 +195,9 @@ the FB.login() function when clicked.
 
 <div class="container">
 
-	<ul class="tabs">
-		<li class="tab-link current" data-tab="tab-1"> Manage Books </li>
-		<li class="tab-link" data-tab="tab-2"> Add Books </li>
-	</ul>
-
-	<div id="tab-1" class="tab-content current">
-		<p> ALL THE INFO ABOUT MANAGING BOOKS HERE WOOT </p> 
-		<ul class = "manage-books"> </ul>
-		<div class="button-group pull-right">
-			<a href="#" class="btn btn-primary"> Edit </a>
-		</div>
-		<div class="button-group pull-right">
-			<a href="#" class="btn btn-primary"> Resolve </a>
-		</div>
-
-	</div>
-
 	<div id="tab-2" class="tab-content">
 		<p> Tell us about the textbook you want to sell! </p>
-		<form>
+<!-- 		<form>
 			<div class="row">
 			<div class="form-group col-md-6">
 				<textarea class="form-control title-box" rows="1" placeholder="Title"></textarea>
@@ -208,7 +237,7 @@ the FB.login() function when clicked.
 
 			<ul class="posts">
 			</ul>
-		</form>
+		</form> -->
 	</div>
 </div>
 <div class="fb-like" data-share="true" data-width="450" data-show-faces="true"> </div>
