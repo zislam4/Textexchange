@@ -44,6 +44,8 @@ var main = function() {
 	$('.add-books-button').click(function(){
 			$(this).next().toggle();
 			console.log("in toggle");
+			console.log($(this));
+			console.log($(this).next());
 	});
 
 
