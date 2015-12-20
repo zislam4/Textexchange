@@ -58,13 +58,54 @@ input[type=submit] {
     padding-left: 10px; 
 }
 
+.info {
+	margin: 2px;
+	text-align: left;
+}
+
+.author {
+	/*margin: 0px;
+	text-align: left;*/
+}
+
+.vol {
+	/*margin: 0px;
+	text-align: left;*/
+}
+
+.edition {
+/*	margin: 0px;
+	text-align: left;*/
+}
+
+.classname {
+/*	margin: 0px;
+	text-align: left;*/
+}
+
+.coursenum {
+/*	margin: 0px;
+	text-align: left;*/
+}
+
+.prof {
+/*	margin: 0px;
+	text-align: left;*/
+}
+
+.seller_name {
+/*	margin: 0px;
+	text-align: left;*/
+}
+
+.condition {
+/*	margin: 0px;
+	text-align: left;*/
+}
+
 .hide {
 	background-color: #F2EEDD;
 	height: 150px;
 	padding-bottom: 20px;
 }
 
-.seller_name {
-	padding: 15px;
-	text-align: left;
-}

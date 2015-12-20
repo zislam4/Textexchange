@@ -7,23 +7,28 @@ var main = function() {
 		// console.log(request.status);
 		if (request.readyState == 4 && request.status == 200) {
 			var bookinfos = JSON.parse(request.responseText);
-			// console.log(bookinfos[1]["title"]);
 			for (var i = 0; i < bookinfos.length; i++) {
 				if (bookinfos[i]["seller_name"] != null) {
-					var li = $('<li>').text(bookinfos[i]["title"]);
+					var li = $('<li>').text(bookinfos[i]["title"] + bookinfos[i]['price']);
 					li.addClass("bookItem");
-					console.log(bookinfos[i]);
+
 					$(".bookinfo").append(li);
 					$(".bookinfo").append(
 						"<div class='hide'>" + 
-						"<p class='seller_name'>" + bookinfos[i]["seller_name"] + "</p>"
-						+"</div>");
-
+						"<p class='info author'>" + bookinfos[i]['author'] + "</p>" +
+						"<p class='info vol'>" + bookinfos[i]["vol"] + "</p>" +
+						"<p class='info edition'>" + bookinfos[i]['edition'] + "</p>" +
+						"<p class='info classname'>" + bookinfos[i]["classname"] + "</p>" +
+						"<p class='info coursenum'>" + bookinfos[i]["coursenum"] + "</p>" +
+						"<p class='info prof'>" + bookinfos[i]['prof'] + "</p>" +
+						"<p class='info condition'>" + bookinfos[i]['condition'] + "</p>" +
+						"<p class='info seller_name'>" + bookinfos[i]["seller_name"] + "</p>" +
+						// "<p class='info price'>" +  + "</p>"
+						"</div>");
 				}
 			}
 			$(".bookinfo").find(".hide").hide();
 			$("li.bookItem").click(function() {
-				console.log($(this));
 				$(this).next().append("li.bookItem".title);
 				$(this).next().toggle();
 			});	
