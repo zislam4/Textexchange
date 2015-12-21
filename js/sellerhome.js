@@ -84,7 +84,6 @@ var main = function() {
 		});
 	}
 
-
 	function get_seller_books () {
 		var seller_name = user_info.name;
 		var seller_id = user_info.id;
@@ -119,11 +118,8 @@ var main = function() {
 		request.send();
 	}
 
-	// Begin interactive functions
-
 	$('.add-books-button').click(function(){
 		$(this).next().toggle();
-		console.log("in toggle");
 	});
 
 
