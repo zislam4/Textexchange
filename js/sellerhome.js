@@ -1,45 +1,40 @@
 var main = function() {
 	$('#add-books-form').hide();
-	// Saving user_info from sellerhome.html
+	Saving user_info from sellerhome.html
 
-	// var seller_name = user_info.name;
-	// var seller_id = user_info.id;
+	var seller_name = user_info.name;
+	var seller_id = user_info.id;
 
-	// Printing seller's books
-	// var request = new XMLHttpRequest();
-	// var url = "https://morning-peak-4677.herokuapp.com/managebooks?"+"seller_id="+seller_id;
-	// request.open("GET", url, true);
+	var request = new XMLHttpRequest();
+	var url = "https://morning-peak-4677.herokuapp.com/managebooks?"+"seller_id="+seller_id;
+	request.open("GET", url, true);
 
-	// request.onreadystatechange = function () {
-	// 	if (request.readyState == 4 && request.status == 200) {
-	// 		var bookinfos = JSON.parse(request.responseText);
-	// 		for (var i = 0; i < bookinfos.length; i++) {
-	// 			if (bookinfos[i]["title"] != null) {
-	// 				// $('<li>').text(bookinfos[i]["title"]).prependTo('.mybookinfo');
-	// 				var li = $('<li>').text(bookinfos[i]["title"]);
-	// 				li.addClass("bookItem");
+	request.onreadystatechange = function () {
+		if (request.readyState == 4 && request.status == 200) {
+			var bookinfos = JSON.parse(request.responseText);
+			for (var i = 0; i < bookinfos.length; i++) {
+				if (bookinfos[i]["title"] != null) {
+					// $('<li>').text(bookinfos[i]["title"]).prependTo('.mybookinfo');
+					var li = $('<li>').text(bookinfos[i]["title"]);
+					li.addClass("bookItem");
 
-	// 				$(".mybookinfo").append(li);
-	// 				$(".mybookinfo").append("<div class='hide'> hello </div>");
-	// 			}
-	// 		}
+					$(".mybookinfo").append(li);
+					$(".mybookinfo").append("<div class='hide'> hello </div>");
+				}
+			}
 		
-	// 	$(".bookinfo").find(".hide").hide();
-	// 	$("li.bookItem").click(function() {
-	// 		$(this).next().append("li.bookItem".title);
-	// 		$(this).next().toggle();
-	// 	});	
-	// 	}
-	// };
+		$(".bookinfo").find(".hide").hide();
+		$("li.bookItem").click(function() {
+			$(this).next().append("li.bookItem".title);
+			$(this).next().toggle();
+		});	
+		}
+	};
 
-	// request.send();
+	request.send();
 
 
 	// Begin interactive functions
-
-		// Creates the form 
-		// var form = "<div id = 'add-books-form'> FORM IS HERE </div>";
-		// $("#form").next().append(form);
 
 	$('.add-books-button').click(function(){
 			$(this).next().toggle();
