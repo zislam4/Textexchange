@@ -86,17 +86,6 @@ var main = function() {
 
 		xhr.send(bookinfo);
 
-		// $('<li>').text(title).prependTo('.posts');
-		// $('<li>').text(title).prependTo('.manage-books');
-		// $('<li>').text(author).prependTo('.posts');
-		// $('<li>').text(vol).prependTo('.posts');
-		// $('<li>').text(edi).prependTo('.posts');
-		// $('<li>').text(clname).prependTo('.posts');
-		// $('<li>').text(cnum).prependTo('.posts');
-		// $('<li>').text(prof).prependTo('.posts');
-		// $('<li>').text(price).prependTo('.posts');
-		// $('<li>').text(cond).prependTo('.posts');
-
 		$('.title-box').val('');
 		$('.author-box').val('');
 		$('.vol-box').val('');
