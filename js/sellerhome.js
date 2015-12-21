@@ -1,5 +1,5 @@
 var main = function() {
-	// $('#add-books-form').hide();
+	$('#add-books-form').hide();
 
 	var seller_name = user_info.name;
 	var seller_id = user_info.id;
