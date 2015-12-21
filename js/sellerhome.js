@@ -4,8 +4,6 @@ var main = function() {
 	var user_info;
 // This is called with the results from from FB.getLoginStatus().
 	function statusChangeCallback(response) {
-		console.log('statusChangeCallback');
-		console.log(response);
 		// The response object is returned with a status field that lets the
 		// app know the current login status of the person.
 		// Full docs on the response object can be found in the documentation
@@ -75,7 +73,6 @@ var main = function() {
 	function testAPI() {
 		console.log('Welcome! Fetching your information.... ');
 		FB.api('/me', function(response) {
-			console.log('Successful login for: ' + response.name);
 			user_info = response;
 			main();
 			document.getElementById('status').innerHTML =
@@ -119,7 +116,7 @@ var main = function() {
 	}
 
 	$('.add-books-button').click(function(){
-		$(this).next().toggle();
+		$('#add-books-form').toggle();
 	});
 
 
