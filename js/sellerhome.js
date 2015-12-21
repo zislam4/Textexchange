@@ -88,7 +88,8 @@ var main = function() {
 	function get_seller_books () {
 		var seller_name = user_info.name;
 		var seller_id = user_info.id;
-
+		console.log(seller_name);
+		console.log(seller_id);
 		var request = new XMLHttpRequest();
 		var url = "https://morning-peak-4677.herokuapp.com/managebooks?seller_id="+seller_id;
 		request.open("GET", url, true);
@@ -118,12 +119,11 @@ var main = function() {
 		request.send();
 	}
 
-
-
 	// Begin interactive functions
 
 	$('.add-books-button').click(function(){
-			$(this).next().toggle();
+		$(this).next().toggle();
+		console.log("in toggle");
 	});
 
 
