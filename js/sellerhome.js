@@ -1,6 +1,5 @@
 var main = function() {
-	$('#add-books-form').hide();
-	Saving user_info from sellerhome.html
+	// $('#add-books-form').hide();
 
 	var seller_name = user_info.name;
 	var seller_id = user_info.id;
@@ -38,7 +37,7 @@ var main = function() {
 
 	$('.add-books-button').click(function(){
 			$(this).next().toggle();
-			console.log("in toggle");
+			console.log("in changed");
 			console.log($(this));
 			console.log($(this).next());
 	});
