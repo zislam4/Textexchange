@@ -1,5 +1,5 @@
 var main = function() {
-	$('#add-books-form').hide();
+	// $('#add-books-form').hide();
 
 	var user_info;
 // This is called with the results from from FB.getLoginStatus().
