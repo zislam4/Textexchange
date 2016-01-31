@@ -13,7 +13,7 @@ var main = function() {
 					li.addClass("bookItem");
 					li.append("<p class= 'title'>" + bookinfos[i]["title"] + "</p>"
 							+ "<p class='price'>$" + bookinfos[i]['price'] + "</p>"
-							+ "<img class='arrow' src='../img/dropdown_arrow2.png'/>");
+							+ "<img class='arrow' src='img/dropdown_arrow2.png'/>");
 					$(".bookinfo").append(li);
 					$(".bookinfo").append(
 						"<div class='hide'>" + 
