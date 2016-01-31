@@ -9,22 +9,28 @@ var main = function() {
 			var bookinfos = JSON.parse(request.responseText);
 			for (var i = 0; i < bookinfos.length; i++) {
 				if (bookinfos[i]["seller_name"] != null) {
-					var li = $('<li>').text(bookinfos[i]["title"] + bookinfos[i]['price']);
+					var li = $('<li>');
 					li.addClass("bookItem");
-
+					li.append("<p class= 'title'>" + bookinfos[i]["title"] + "</p>"
+							+ "<p class='price'>$" + bookinfos[i]['price'] + "</p>"
+							+ "<img class='arrow' src='../img/dropdown_arrow2.png'/>");
 					$(".bookinfo").append(li);
 					$(".bookinfo").append(
 						"<div class='hide'>" + 
-						"<p class='info author'>" + bookinfos[i]['author'] + "</p>" +
-						"<p class='info vol'>" + bookinfos[i]["vol"] + "</p>" +
-						"<p class='info edition'>" + bookinfos[i]['edition'] + "</p>" +
-						"<p class='info classname'>" + bookinfos[i]["classname"] + "</p>" +
-						"<p class='info coursenum'>" + bookinfos[i]["coursenum"] + "</p>" +
-						"<p class='info prof'>" + bookinfos[i]['prof'] + "</p>" +
-						"<p class='info condition'>" + bookinfos[i]['condition'] + "</p>" +
-						"<p class='info seller_name'>" + bookinfos[i]["seller_name"] + "</p>" +
-						// "<p class='info price'>" +  + "</p>"
-						"</div>");
+							"<div class='bookdetails'>" +
+								"<p class='info author'>" + bookinfos[i]['author'] + "</p>" +
+								"<p class='info vol'> Volume: " + bookinfos[i]["vol"] + "</p>" +
+								"<p class='info edition'>Edition: " + bookinfos[i]['edition'] + "</p>" +
+							"</div>" +
+							"<div class='classdetails'>" +
+								"<p class='info classname'>Class: " + bookinfos[i]["classname"] + "</p>" +
+								"<p class='info coursenum'>Class ID: " + bookinfos[i]["coursenum"] + "</p>" +
+								"<p class='info prof'>Professor: " + bookinfos[i]['prof'] + "</p>" +
+							"</div>" +
+							"<p class='info condition'>Condition: " + bookinfos[i]['condition'] + "</p>" +
+							"<p class='info seller_name'>Sold by: " + bookinfos[i]["seller_name"] + "</p>" +
+						"</div>"
+					);
 				}
 			}
 			$(".bookinfo").find(".hide").hide();

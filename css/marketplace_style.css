@@ -22,7 +22,7 @@
 }
 
 input[type=submit] {
-	background:url("searchbaricon.png");
+	background:url("../img/searchbaricon.png");
     background-size: contain;
     background-repeat: no-repeat;
     border: none;
@@ -58,54 +58,76 @@ input[type=submit] {
     padding-left: 10px; 
 }
 
+.arrow {
+	margin-left: 5%;
+}
+
+.title {
+	display: inline-block;
+  	width: 80%;
+  	margin: 0px;
+}
+
+.price {
+	display: inline-block;
+	text-align: right;
+	width: 10%;
+	margin: 0px;
+}
+
 .info {
 	margin: 2px;
+	text-align: left;
+	color: gray;
+}
+
+.bookdetails {
 	text-align: left;
 }
 
 .author {
-	/*margin: 0px;
-	text-align: left;*/
+	display: inline-block;
+	width: 40%;
 }
 
 .vol {
-	/*margin: 0px;
-	text-align: left;*/
+	display: inline-block;
+	width: 25%;
 }
 
 .edition {
-/*	margin: 0px;
-	text-align: left;*/
+	display: inline-block;
+	width: 25%;
+}
+
+.classdetails {
+	text-align: left;
 }
 
 .classname {
-/*	margin: 0px;
-	text-align: left;*/
+	display: inline-block;
+	width: 40%;
 }
 
 .coursenum {
-/*	margin: 0px;
-	text-align: left;*/
+	display: inline-block;
+	width: 25%;
 }
 
 .prof {
-/*	margin: 0px;
-	text-align: left;*/
+	display: inline-block;
+	width: 25%;
 }
 
 .seller_name {
-/*	margin: 0px;
-	text-align: left;*/
 }
 
 .condition {
-/*	margin: 0px;
-	text-align: left;*/
 }
 
 .hide {
 	background-color: #F2EEDD;
-	height: 150px;
-	padding-bottom: 20px;
+	height: 100px;
+	padding: 10px;
 }
 

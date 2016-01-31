@@ -1,21 +1,23 @@
 @import url(https://fonts.googleapis.com/css?family=Signika);
 
-/*body {
-	background: url('frontpage-background.gif');
-	background-size: 1500px 1200px;
-	background-repeat: no-repeat;
-	background-position: center;
+body {
+	background-image: url("../img/background_still.jpg");
+	background-size: cover;
 }
-*/
 
-video {
-	width: 100%;
+#homepage .left a,
+#homepage .right a {
+	color: white;
+}
+
+.toolapplyBorderLeft {
+	border-left: solid 2px white; 
 }
 
 .logo {
-	padding-top: 15%;
+	padding-top: 20%;
 	width: 500px;
-	margin: 0 auto;
+	margin-left: 35%;
 	text-align: center;
 }
 
@@ -25,22 +27,18 @@ img.button {
 	margin: 0px;
 }
 
-
-.container{ 
+.container { 
 	position:relative; 
 	padding: 0px;
 	text-align: center;
 	width: 100%;
 }
 
-.container video {
-    position:relative;
-    z-index:0;
-}
-.overlay {
-    position:absolute;
-    width: 100%;
-    top:0;
-    left:0;
-    z-index:1;
+@media only screen and (max-width: 800px) {
+	body {
+		background-image: url("../img/background_still.jpg");
+		background-size: cover;
+		width: 400px;
+		height: 1000px;
+	}	
 }
