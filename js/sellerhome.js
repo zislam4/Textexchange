@@ -174,6 +174,7 @@ var main = function() {
 		var price = $('.price-box').val(); 
 		var cond = $('.cond-box').val(); 		
 		var seller_name = user_info.name;
+		var seller_id = user_info.id;
 
 		var bookinfo = "seller_name="+seller_name+"&seller_id="+seller_id+"&title="+title+"&author="+author+"&vol="+vol	+"&edition="+edi+"&classname="+clname+"&coursenum="+cnum+"&prof="+prof+"&price="+price+"&condition="+cond;
 		console.log(bookinfo);
