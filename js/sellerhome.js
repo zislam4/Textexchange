@@ -95,7 +95,6 @@ var main = function() {
 				var bookinfos = JSON.parse(request.responseText);
 				for (var i = 0; i < bookinfos.length; i++) {
 					if (bookinfos[i]["title"] != null) {
-						// $('<li>').text(bookinfos[i]["title"]).prependTo('.mybookinfo');
 						var li = $('<li>').text(bookinfos[i]["title"]);
 						li.addClass("bookItem");
 
@@ -104,11 +103,12 @@ var main = function() {
 					}
 				}
 			
-			$(".bookinfo").find(".hide").hide();
-			$("li.bookItem").click(function() {
-				$(this).next().append("li.bookItem".title);
-				$(this).next().toggle();
-			});	
+				$(".bookinfo").find(".hide").hide();
+				$("li.bookItem").click(function() {
+					console.log('here');
+					$(this).next().append("li.bookItem".title);
+					$(this).next().toggle();
+				});	
 			}
 		};
 
