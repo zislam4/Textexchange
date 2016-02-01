@@ -195,7 +195,8 @@ var main = function() {
 		$('.price-box').val('');
 		$('.cond-box').val('');
 
-		$('.btn').addClass('disabled');	
+		$('.btn').addClass('disabled');
+		$('#add-books-form').slideUp();	
 		get_seller_books();
 	});
 
