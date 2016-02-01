@@ -39,11 +39,12 @@
 }
 
 #add-books-form {
-    background-color: lightgray;
+    border: 1px solid lightgray;
     height: 100%;
     padding: 1%;
     width: 800px;
     margin: 20px auto;
+    background-color: #f1f1f1;
 }
 
 .button-group {
@@ -59,6 +60,11 @@ li.bookItem {
     color: #545454;
     font-size: 16px;
 
+}
+
+#seller-button {
+	background-color: #696969;
+	border-color: #696969;
 }
 
 /*.container{
