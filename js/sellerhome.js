@@ -160,6 +160,7 @@ var main = function() {
 	});
 
 	$('.button-group').click(function() {
+		console.log('adding a book');
 		var xhr = new XMLHttpRequest();
 		xhr.open("post", "https://morning-peak-4677.herokuapp.com/add", true);
 
@@ -172,8 +173,9 @@ var main = function() {
 		var prof = $('.prof-box').val(); 
 		var price = $('.price-box').val(); 
 		var cond = $('.cond-box').val(); 		
+		var seller_name = user_info.name;
 
-		var bookinfo = "seller_name="+seller_name+"&seller_id="+seller_id+"&title="+title+"&author="+author+"&vol="+vol		+"&edition="+edi+"&classname="+clname+"&coursenum="+cnum+"&prof="+prof+"&price="+price+"&condition="+cond;
+		var bookinfo = "seller_name="+seller_name+"&seller_id="+seller_id+"&title="+title+"&author="+author+"&vol="+vol	+"&edition="+edi+"&classname="+clname+"&coursenum="+cnum+"&prof="+prof+"&price="+price+"&condition="+cond;
 		console.log(bookinfo);
 		
 		xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
