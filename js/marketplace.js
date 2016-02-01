@@ -18,15 +18,15 @@ var main = function() {
 					$(".bookinfo").append(
 						"<div class='hide'>" + 
 							"<div class='bookdetails'>" +
-								"<p class='info author'>" + bookinfos[i]['author'] + "</p>" +
+								"<p class='info author'> Author: " + bookinfos[i]['author'] + "</p>" +
 								"<p class='info vol'> Volume: " + bookinfos[i]["vol"] + "</p>" +
 								"<p class='info edition'>Edition: " + bookinfos[i]['edition'] + "</p>" +
 							"</div>" +
 							"<div class='classdetails'>" +
 								"<p class='info classname'>Class: " + bookinfos[i]["classname"] + "</p>" +
 								"<p class='info coursenum'>Class ID: " + bookinfos[i]["coursenum"] + "</p>" +
-								"<p class='info prof'>Professor: " + bookinfos[i]['prof'] + "</p>" +
 							"</div>" +
+							"<p class='info prof'>Professor: " + bookinfos[i]['prof'] + "</p>" +
 							"<p class='info condition'>Condition: " + bookinfos[i]['condition'] + "</p>" +
 							"<p class='info seller_name'>Sold by: " + bookinfos[i]["seller_name"] + "</p>" +
 						"</div>"

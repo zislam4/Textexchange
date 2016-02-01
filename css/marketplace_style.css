@@ -78,7 +78,7 @@ input[type=submit] {
 .info {
 	margin: 2px;
 	text-align: left;
-	color: gray;
+	color: #696969;
 }
 
 .bookdetails {
@@ -87,17 +87,17 @@ input[type=submit] {
 
 .author {
 	display: inline-block;
-	width: 40%;
+	width: 50%;
 }
 
 .vol {
 	display: inline-block;
-	width: 25%;
+	width: 20%;
 }
 
 .edition {
 	display: inline-block;
-	width: 25%;
+	width: 20%;
 }
 
 .classdetails {
@@ -106,17 +106,15 @@ input[type=submit] {
 
 .classname {
 	display: inline-block;
-	width: 40%;
+	width: 50%;
 }
 
 .coursenum {
 	display: inline-block;
-	width: 25%;
+	width: 40%;
 }
 
 .prof {
-	display: inline-block;
-	width: 25%;
 }
 
 .seller_name {
