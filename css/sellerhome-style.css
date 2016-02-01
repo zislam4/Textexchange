@@ -39,11 +39,11 @@
 }
 
 #add-books-form {
-	background-color: orange;
-	margin: 0% 15% 0% 15%;
-	height: 100%;
-	padding: 1%;
-
+    background-color: lightgray;
+    height: 100%;
+    padding: 1%;
+    width: 800px;
+    margin: 20px auto;
 }
 
 .button-group {

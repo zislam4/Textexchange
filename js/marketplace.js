@@ -3,8 +3,6 @@ var main = function() {
 	request.open("GET", "https://morning-peak-4677.herokuapp.com/", true);
 
 	request.onreadystatechange = function () {
-		// console.log(request.readyState);
-		// console.log(request.status);
 		if (request.readyState == 4 && request.status == 200) {
 			var bookinfos = JSON.parse(request.responseText);
 			for (var i = 0; i < bookinfos.length; i++) {
