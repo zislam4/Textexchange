@@ -196,6 +196,7 @@ var main = function() {
 		$('.cond-box').val('');
 
 		$('.btn').addClass('disabled');	
+		get_seller_books();
 	});
 
 	$('.btn').addClass('disabled');
