@@ -106,9 +106,14 @@ var main = function() {
 				$(".bookinfo").find(".hide").hide();
 				$("li.bookItem").click(function() {
 					console.log('here');
+					console.log($(this).next());
 					$(this).next().append("li.bookItem".title);
 					$(this).next().toggle();
 				});	
+
+				$('.add-books-button').click(function(){
+					$('#add-books-form').toggle();
+				});
 			}
 		};
 
