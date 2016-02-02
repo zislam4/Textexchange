@@ -120,9 +120,9 @@ var main = function() {
 			
 				$(".bookinfo").find(".hide").hide();
 				$("li.bookItem").click(function() {
-					console.log('here');
+					console.log('here 1');
 					console.log($(this).next());
-					$(this).next().toggle();
+					$(this).next().slideDown();
 				});	
 
 				$('.add-books-button').click(function(){
