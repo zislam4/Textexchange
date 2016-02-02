@@ -119,11 +119,6 @@ var main = function() {
 				}
 			
 				$(".bookinfo").find(".hide").hide();
-				$("li.bookItem").click(function() {
-					console.log('here 1');
-					console.log($(this).next());
-					$(this).next().slideDown();
-				});	
 
 				$('.add-books-button').click(function(){
 					$('#add-books-form').toggle();
@@ -133,6 +128,12 @@ var main = function() {
 
 		request.send();
 	}
+
+	$("li.bookItem").click(function() {
+		console.log('here 2');
+		console.log($(this).next());
+		$(this).next().toggle();
+	});	
 
 	$('.add-books-button').click(function(){
 		$('#add-books-form').toggle();
